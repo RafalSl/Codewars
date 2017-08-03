@@ -1,0 +1,22 @@
+package tortoise;
+
+public class Tortoise {
+	public static void main(String[] args) {
+		System.out.println(race(720, 850, 70));
+
+	}
+	
+	public static int[] race(int v1, int v2, int g) {
+        if(v2 > v1){
+        	int t, h, m, s;
+        	t = (v2-v1)/g;
+        		h = t/3600;
+        		t %= 3600;
+        		m = t/60;
+        		s = t%60;
+        	return new int[]{h, m, s};
+        }else return null;
+    }
+}
+
+
