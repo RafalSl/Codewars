@@ -21,6 +21,8 @@ public class Kata {
 			}
 		}
 		words = String.join(" ", splited_words);
+		int[] a = new int[10];
+		System.out.println(a.getClass());
 		return words;
 	}
   
